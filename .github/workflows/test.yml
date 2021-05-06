@@ -16,6 +16,9 @@ jobs:
       - name: Create test file
         run: echo "test12345" > test.txt
 
+      - name: Install Packages
+        run: npm install
+
       - name: Test self
         uses: ./ # Uses an action in the root directory
         with:
