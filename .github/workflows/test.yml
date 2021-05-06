@@ -17,7 +17,7 @@ jobs:
         run: echo "test12345" > test.txt
 
       - name: SharePoint uploader
-        uses: su-dont/share-point-uploader@v1.0
+        uses: ./
         with:
           sp_url: https://verimatrix.sharepoint.com/:f:/r/sites/productdocumentation
           sp_username: ${{ secrets.SP_USERNAME }}
