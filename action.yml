@@ -1,0 +1,26 @@
+name: SharePoint uploader
+description: GitHub action to upload a file to SharePoint
+author: Krzysztof Hamerski
+inputs:
+  sp_url:
+    description: SharePoint URL
+    required: true
+  sp_username:
+    description: SharePoint Username
+    required: true
+  sp_password:
+    description: SharePoint Password
+    required: true
+  sp_folder:
+    description: SharePoint destination folder
+    required: true
+  sp_file_name:
+    description: SharePoint destination file name
+    required: true
+  file:
+    description: File to be uploaded
+    required: true
+runs:
+  using: node12
+  pre: setup.js
+  main: index.js
