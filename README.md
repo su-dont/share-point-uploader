@@ -2,6 +2,15 @@
 
 GitHub action to upload a file to SharePoint
 
+## Inputs
+
+- `sp_url` - SharePoint URL
+- `sp_username` - Username
+- `sp_password` - Password
+- `sp_folder` - Sharepoint folder where the file is to be uploaded
+- `sp_file_name` - SharePoint destination file name
+- `file` - Actual file created during job execution
+
 ## Usage Sample
 
 ```yml
