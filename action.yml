@@ -1,6 +1,9 @@
 name: SharePoint uploader
 description: GitHub action to upload a file to SharePoint
 author: Krzysztof Hamerski
+branding:
+  icon: upload-cloud
+  color: yellow
 inputs:
   sp_url:
     description: SharePoint URL
