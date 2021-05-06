@@ -21,6 +21,6 @@ inputs:
     description: File to be uploaded
     required: true
 runs:
-  using: "node12"
-  pre: "setup.js" # a hack to run npm install first
-  main: "index.js"
+  using: node12
+  pre: setup.js
+  main: index.js
