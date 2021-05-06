@@ -1,6 +1,8 @@
-FROM alpine/node:latest
+FROM node:latest
 
-# add working dir
-ADD . .
+ADD . /home
+WORKDIR /home
 
-ENTRYPOINT ["/entrypoint.sh"]
+RUN npm ci
+
+ENTRYPOINT ["/home/entrypoint.sh"]

@@ -31,5 +31,5 @@ runs:
     SP_USERNAME: ${{ inputs.sp_username }}
     SP_PASSWORD: ${{ inputs.sp_password }}
     SP_FOLDER: ${{ inputs.sp_folder }}
-    SP_FILE_NAME: ${{ inputs.SP_FILE_NAME }}
+    SP_FILE_NAME: ${{ inputs.sp_file_name }}
     FILE: ${{ inputs.file }}
