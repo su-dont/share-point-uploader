@@ -23,5 +23,5 @@ inputs:
 runs:
   using: composite
   steps:
-    - run: npm install && node index.js
+    - run: ls -al && pwd
       shell: bash
