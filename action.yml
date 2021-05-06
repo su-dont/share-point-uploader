@@ -27,5 +27,5 @@ runs:
       shell: bash
     - run: ls -al
       shell: bash
-    - run: which node
+    - run: npm run start
       shell: bash
