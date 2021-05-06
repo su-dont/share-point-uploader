@@ -21,5 +21,7 @@ inputs:
     description: File to be uploaded
     required: true
 runs:
-  using: node12
-  main: index.js
+  using: composite
+  steps:
+    - run: npm install && node index.js
+      shell: bash
