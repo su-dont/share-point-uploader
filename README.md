@@ -31,7 +31,7 @@ jobs:
           sp_url: https://my.sharepoint.com/:f:/r/sites/docs
           sp_username: john.doe@sharepoint.com
           sp_password: ${{ secrets.PASSWORD }}
-          sp_folder: /My%20Documents/Files
+          sp_folder: /My Documents/My Files
           sp_file_name: share_point_text.txt
           file: test.txt
 ```
