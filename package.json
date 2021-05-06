@@ -1,0 +1,23 @@
+{
+  "name": "share-point-uploader",
+  "version": "1.0.0",
+  "description": "SharePoint Uploader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/su-dont/share-point-uploader.git"
+  },
+  "keywords": [],
+  "author": "Krzysztof Hamerski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/su-dont/share-point-uploader/issues"
+  },
+  "homepage": "https://github.com/su-dont/share-point-uploader#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.7"
+  }
+}
