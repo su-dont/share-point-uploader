@@ -24,6 +24,12 @@ inputs:
     description: File to be uploaded
     required: true
 runs:
-  using: node12
-  pre: setup.js
-  main: index.js
+  using: "docker"
+  image: "Dockerfile"
+  env:
+    SP_URL: ${{ inputs.sp_url }}
+    SP_USERNAME: ${{ inputs.sp_username }}
+    SP_PASSWORD: ${{ inputs.sp_password }}
+    SP_FOLDER: ${{ inputs.sp_folder }}
+    SP_FILE_NAME: ${{ inputs.SP_FILE_NAME }}
+    FILE: ${{ inputs.file }}

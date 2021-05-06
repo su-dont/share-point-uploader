@@ -6,18 +6,18 @@ const spsave = require("spsave").spsave;
 
 try {
   const coreOptions = {
-    siteUrl: core.getInput("sp_url"),
+    siteUrl: core.getInput(process.env.SP_URL),
   };
 
   const creds = {
-    username: core.getInput("sp_username"),
-    password: core.getInput("sp_password"),
+    username: core.getInput(process.env.SP_USERNAME),
+    password: core.getInput(process.env.SP_PASSWORD),
   };
 
   const fileOptions = {
-    folder: core.getInput("sp_folder"),
-    fileName: core.getInput("sp_file_name"),
-    fileContent: fs.readFileSync(core.getInput("file")),
+    folder: core.getInput(process.env.SP_FOLDER),
+    fileName: core.getInput(process.env.SP_FILE_NAME),
+    fileContent: fs.readFileSync(core.getInput(process.env.FILE)),
   };
 
   spsave(coreOptions, creds, fileOptions).catch((error) => {
