@@ -1,0 +1,10 @@
+name: SharePoint uploader
+description: GitHub action to upload a file to SharePoint
+author: Krzysztof Hamerski
+inputs:
+  sp_url:
+    description: SharePoint URL
+    required: true
+runs:
+  using: node12
+  main: index.js
