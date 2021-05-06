@@ -1,0 +1,5 @@
+import * as spauth from 'node-sp-auth';
+import { Cache } from './utils/Cache';
+import { ISPRequest } from './types';
+export declare const requestDigestCache: Cache;
+export declare function create(credentials?: spauth.IAuthOptions): ISPRequest;
