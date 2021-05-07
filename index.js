@@ -14,9 +14,6 @@ try {
     password: process.env.SP_PASSWORD,
   };
 
-  console.log("WS: " + process.env.GITHUB_WORKSPACE);
-  console.log("F: " + process.env.FILE);
-
   const fileOptions = {
     folder: process.env.SP_FOLDER,
     fileName: process.env.SP_FILE_NAME,

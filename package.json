@@ -1,6 +1,6 @@
 {
   "name": "share-point-uploader",
-  "version": "2.0",
+  "version": "2.1",
   "description": "SharePoint Uploader",
   "main": "index.js",
   "scripts": {
