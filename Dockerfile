@@ -1,6 +1,6 @@
 FROM node:latest
 
-ADD . /home
+COPY . /home
 WORKDIR /home
 
 RUN whoami
