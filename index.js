@@ -17,7 +17,9 @@ try {
   const fileOptions = {
     folder: process.env.SP_FOLDER,
     fileName: process.env.SP_FILE_NAME,
-    fileContent: fs.readFileSync(process.env.FILE),
+    fileContent: fs.readFileSync(
+      `${process.env.GITHUB_WORKSPACE}/${process.env.FILE}`
+    ),
   };
 
   spsave(coreOptions, creds, fileOptions).catch((error) => {
