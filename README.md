@@ -26,7 +26,7 @@ jobs:
         run: echo "test" > test.txt
 
       - name: SharePoint uploader
-        uses: su-dont/share-point-uploader@v2.0
+        uses: su-dont/share-point-uploader@v2.1
         with:
           sp_url: https://my.sharepoint.com/:f:/r/sites/docs
           sp_username: john.doe@sharepoint.com
