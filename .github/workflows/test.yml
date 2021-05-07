@@ -22,6 +22,6 @@ jobs:
           sp_url: https://verimatrix.sharepoint.com/:f:/r/sites/productdocumentation
           sp_username: ${{ secrets.SP_USERNAME }}
           sp_password: ${{ secrets.SP_PASSWORD }}
-          sp_folder: /Shared%20Documents/Watermarking/Standalone%20Android%20SDK
+          sp_folder: /Shared Documents/Watermarking/Standalone Android SDK
           sp_file_name: my_file.txt
           file: test.txt
