@@ -24,8 +24,8 @@ inputs:
     description: File to be uploaded
     required: true
 runs:
-  using: "docker"
-  image: "Dockerfile"
+  using: docker
+  image: Dockerfile
   env:
     SP_URL: ${{ inputs.sp_url }}
     SP_USERNAME: ${{ inputs.sp_username }}
