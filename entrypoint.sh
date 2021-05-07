@@ -1,4 +1,6 @@
 #!/bin/sh -l
 
-npm ci
+whoami
+pwd
+ls -al
 node index.js
