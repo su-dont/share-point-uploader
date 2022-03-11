@@ -3,6 +3,7 @@
 const core = require("@actions/core");
 const fs = require("fs");
 const spsave = require("spsave").spsave;
+const execSync = require("child_process").execSync;
 
 try {
   const coreOptions = {
@@ -13,6 +14,12 @@ try {
     username: process.env.SP_USERNAME,
     password: process.env.SP_PASSWORD,
   };
+
+  let output = execSync("ls", { encoding: "utf-8" }); // the default is 'buffer'
+  console.log("Output was:\n", output);
+
+  output = execSync("ls ..", { encoding: "utf-8" }); // the default is 'buffer'
+  console.log("Output2 was:\n", output);
 
   const fileOptions = {
     folder: process.env.SP_FOLDER,

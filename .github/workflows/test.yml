@@ -10,9 +10,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Run ls
-        run: ls -al
-
       - name: Self test
         uses: ./ # Uses an action in the root directory
         id: hello
@@ -22,4 +19,7 @@ jobs:
           sp_password: ${{ secrets.SP_PASSWORD }}
           sp_folder: /Shared Documents/Watermarking/Standalone Android SDK
           sp_file_name: bigfile
-          file: ../bigdriverfile
+          file: package.json
+
+      - name: Run ls
+        run: ls -al
