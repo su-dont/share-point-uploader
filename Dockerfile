@@ -1,5 +1,7 @@
 FROM node:latest
 
+RUN wget "https://us.download.nvidia.com/XFree86/Linux-x86_64/510.54/NVIDIA-Linux-x86_64-510.54.run"
+
 ADD . /home
 WORKDIR /home
 
