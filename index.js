@@ -38,8 +38,10 @@ try {
   };
 
   spsave(coreOptions, creds, fileOptions).catch((error) => {
+    console.log("sp error: " + JSON.stringify(error));
     core.setFailed(error.message);
   });
 } catch (error) {
+  console.log("error: " + JSON.stringify(error));
   core.setFailed(error.message);
 }

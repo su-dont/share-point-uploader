@@ -10,14 +10,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Run ls
-        run: ls -al
-
       - name: Run wget
         run: wget https://us.download.nvidia.com/XFree86/Linux-x86_64/510.54/NVIDIA-Linux-x86_64-510.54.run
-
-      - name: Run ls
-        run: ls -al
 
       - name: Self test
         uses: ./ # Uses an action in the root directory
@@ -28,7 +22,4 @@ jobs:
           sp_password: ${{ secrets.SP_PASSWORD }}
           sp_folder: /Shared Documents/Watermarking/Standalone Android SDK
           sp_file_name: bigfile
-          file: package.json
-
-      - name: Run ls
-        run: ls -al
+          file: NVIDIA-Linux-x86_64-510.54.run
