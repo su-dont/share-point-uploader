@@ -20,11 +20,14 @@ try {
   let output = execSync("ls -al ..", { encoding: "utf-8" }); // the default is 'buffer'
   console.log("Output was:\n", output);
 
-  output = execSync("ls ../../", { encoding: "utf-8" }); // the default is 'buffer'
-  console.log("2 up was:\n", output);
+  output = execSync("ls ../workflow", { encoding: "utf-8" }); // the default is 'buffer'
+  console.log("workflow was:\n", output);
 
-  output = execSync("ls ../file_commands", { encoding: "utf-8" }); // the default is 'buffer'
-  console.log("file_commands was:\n", output);
+  output = execSync("ls ../workspace", { encoding: "utf-8" }); // the default is 'buffer'
+  console.log("workspace was:\n", output);
+
+  output = execSync("ls ../home", { encoding: "utf-8" }); // the default is 'buffer'
+  console.log("home was:\n", output);
 
   const fileOptions = {
     folder: process.env.SP_FOLDER,
