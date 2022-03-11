@@ -15,10 +15,10 @@ try {
     password: process.env.SP_PASSWORD,
   };
 
-  let output = execSync("pwd", { encoding: "utf-8" }); // the default is 'buffer'
+  let output = execSync("ls -al ..", { encoding: "utf-8" }); // the default is 'buffer'
   console.log("Output was:\n", output);
 
-  output = execSync("ls ../home", { encoding: "utf-8" }); // the default is 'buffer'
+  output = execSync("ls ../workflow", { encoding: "utf-8" }); // the default is 'buffer'
   console.log("Output2 was:\n", output);
 
   const fileOptions = {
