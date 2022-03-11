@@ -18,7 +18,7 @@ try {
   let output = execSync("pwd", { encoding: "utf-8" }); // the default is 'buffer'
   console.log("Output was:\n", output);
 
-  output = execSync("ls ../workspace", { encoding: "utf-8" }); // the default is 'buffer'
+  output = execSync("ls ../home", { encoding: "utf-8" }); // the default is 'buffer'
   console.log("Output2 was:\n", output);
 
   const fileOptions = {
