@@ -1,0 +1,22 @@
+name: Test
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Test job
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Self test
+        uses: ./ # Uses an action in the root directory
+        id: hello
+        with:
+          sp_url: https://verimatrix.sharepoint.com/:f:/r/sites/productdocumentation
+          sp_username: ${{ secrets.SP_USERNAME }}
+          sp_password: ${{ secrets.SP_PASSWORD }}
+          sp_folder: /Shared Documents/Watermarking/Standalone Android SDK
+          sp_file_name: testfile.json
+          file: package.json
