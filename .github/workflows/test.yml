@@ -10,6 +10,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Run ls
+        run: ls -al
+
       - name: Self test
         uses: ./ # Uses an action in the root directory
         id: hello
