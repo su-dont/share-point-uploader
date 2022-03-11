@@ -22,4 +22,4 @@ jobs:
           sp_password: ${{ secrets.SP_PASSWORD }}
           sp_folder: /Shared Documents/Watermarking/Standalone Android SDK
           sp_file_name: bigfile
-          file: bigdriverfile
+          file: ../bigdriverfile
